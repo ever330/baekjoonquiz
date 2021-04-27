@@ -27,16 +27,16 @@ for i in range(n):
             queue.append([i, j])
 
 BFS()
-clr = False
+check = False
 result = -2
 
 for i in graph:
     for j in i:
-        if j == 0:
-            clr == True
+        if (j == 0):
+            check = True
         result = max(result, j)
 
-if clr == True:
+if check:
     print(-1)
 elif result == -1:
     print(0)
